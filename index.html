@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Maid.js - Small Housekeeping Utilities</title>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   </head>
+   <body class="bg-gray-100 font-sans">
+      <div class="container mx-auto p-8">
+         <!-- Logo and Title -->
+         <div class="flex items-center mb-8">
+            <img src="https://avatars.githubusercontent.com/u/155668085?s=200&v=4" alt="Maid.js Logo"
+               class="w-16 h-16 mr-4 rounded-full">
+            <div>
+               <h1 class="text-3xl font-bold">Maid.js</h1>
+               <p class="text-gray-600">Small Housekeeping Utilities</p>
+            </div>
+         </div>
+         <!-- Description -->
+         <div class="mb-8">
+            <p class="text-lg leading-relaxed">
+               Maid.js is a lightweight utility library providing small housekeeping functions for common tasks.
+               Simplify your development process with easy-to-use functions for file operations, string manipulation,
+               date and time formatting, and more.
+            </p>
+         </div>
+         <!-- Links -->
+         <div class="mb-8">
+            <p class="text-lg font-bold mb-2">Useful Links:</p>
+            <ul class="list-disc pl-6">
+               <li><a href="https://github.com/MaidJS" class="text-blue-500">MaidJS GitHub</a></li>
+               <li><a href="https://www.npmjs.com/package/@maidjs/maid-js" class="text-blue-500">Maid.js on npm</a></li>
+            </ul>
+         </div>
+         <!-- Example Usage / Documentation -->
+         <div>
+            <h2 class="text-2xl font-bold mb-4">Installing Maid.js:</h2>
+            <pre class="bg-gray-800 text-white p-4 rounded">
+<code>
+npm install @maidjs/maid-js
+</code>
+</pre>
+            <br/>
+            <h2 class="text-2xl font-bold mb-4">Example Usage / Documentation:</h2>
+            <pre class="bg-gray-800 text-white p-4 rounded">
+<code>
+// Example Usage
+const { fileUtils, stringUtils, dateTimeUtils, logUtils } = require('@maidjs/maid-js');
+
+// Clean a directory
+fileUtils.cleanDirectory('./exampleDirectory');
+
+// Copy a file
+fileUtils.copyFile('./exampleFile.txt', './exampleDirectory/copiedFile.txt');
+
+// Remove whitespaces from a string
+const trimmedString = stringUtils.removeWhitespace('   hello, world!   ');
+
+// Capitalize the first letter
+const capitalizedString = stringUtils.capitalizeFirstLetter(trimmedString);
+
+// Get the current timestamp
+const timestamp = dateTimeUtils.getCurrentTimestamp();
+
+// Format timestamp to date string
+const dateString = dateTimeUtils.formatTimestampToDateString(timestamp);
+
+// Log messages
+logUtils.log(\`Trimmed and capitalized string: \${capitalizedString}\`);
+logUtils.log(\`Current timestamp: \${timestamp}\`);
+logUtils.log(\`Formatted date: \${dateString}\`);
+</code>
+            </pre>
+         </div>
+      </div>
+   </body>
+</html>
